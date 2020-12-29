@@ -1,0 +1,107 @@
+:root {
+    --bg-color: #17181a;
+    --orange-btn-color: #ff9500;
+    --dark-btn-color: #222427;
+    --red-btn-color: #2d191e;
+    --green-btn-color: #2ec973;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.calculator {
+    padding: 30px 20px;
+    margin: 0 auto;
+    border-radius: 30px;
+    background-color: var(--bg-color);
+    max-width: 270px;
+    min-width: 270px;
+}
+
+.buttons-group {
+    user-select: none;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.btn {
+    background-color: lightgray;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: var(--dark-btn-color);
+}
+
+.btn:hover {
+    filter: brightness(1.1);
+}
+
+.btn-green {
+    background-color: var(--green-btn-color);
+    font-size: 20px;
+}
+
+.btn-orange {
+    background-color: var(--orange-btn-color);
+    font-size: 20px;
+}
+
+.btn-red {
+    color: #c83942;
+    background-color: var(--red-btn-color);
+}
+
+.input {
+    outline: none;
+    background-color: var(--bg-color);
+    border: none;
+    color: white;
+    font-size: 40px;
+    width: 100%;
+    text-align: right;
+}
+
+.input::-moz-selection {
+    background-color: #6b6b6b;
+    color: #ff9500;
+}
+
+.input::selection {
+    background-color: #6b6b6b;
+    color: #ff9500;
+}
+
+.input-field {
+    text-align: right;
+    padding: 25px 0px 80px 0px;
+}
+
+.btn-small {
+    height: 30px;
+    line-height: 30px;
+}
+
+.btn-double {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.toolbox {
+    text-align: right;
+}
+.tool {
+    cursor: pointer;
+    color: #5a5a5a;
+}
+
+.tool:hover {
+    filter: brightness(1.1);
+}
