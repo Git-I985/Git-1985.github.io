@@ -33,21 +33,24 @@ const input = new Input(document.querySelector('.input'));
 
 document.querySelectorAll('.btn').forEach((node) => {
     const btn = new Button(node);
+
     const actions = {
         clearInput: () => input.clear(),
         removeLast: () => input.slice(),
         default: () => input.append(btn.caption),
         getResult: () => (input.value = evalExpr(input.value)),
     };
+
     node.onclick = actions[btn.action] || actions.default;
 });
 
-document.querySelectorAll('.tool').forEach((btn) => {
-    btn.onclick = {
-        copy: () => {
-            if (!input.value) return;
-            input.node.select();
-            document.execCommand('copy');
-        },
-    }[btn.dataset.action];
-});
+document.querySelectorAll('.tool').forEach(
+    (btn) =>
+        (btn.onclick = {
+            copy: () => {
+                if (!input.value) return;
+                input.node.select();
+                document.execCommand('copy');
+            },
+        }[btn.dataset.action])
+);
