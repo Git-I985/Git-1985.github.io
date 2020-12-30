@@ -1,5 +1,5 @@
 # Pure JS calculator web app
-Small, simple pet project to explore new js features and practise clean code (no :))
+Small and simple pet project to explore new js features, and practise clean code (no :))
 
 ## Future
 * Theming
