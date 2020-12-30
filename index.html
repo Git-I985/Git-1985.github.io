@@ -17,7 +17,7 @@
             <i class="fas fa-clone tool" data-action="copy" title="Copy to clipboard"></i>
         </div>
         <div class="input-field">
-            <input class="input" type="text" autofocus placeholder="0">
+            <div class="input" contenteditable="true"></div>
         </div>
         <div class="buttons-group">
             <!-- Small btns -->
@@ -54,7 +54,9 @@
 
     <script src="https://pagecdn.io/lib/mathjs/7.1.0/math.min.js" crossorigin="anonymous"></script>
 
-    <script src="./index.js"></script>
+    <script type="module" src="./CalculatorInput.js"></script>
+    <script type="module" src="./CalculatorButton.js"></script>
+    <script type="module" src="./index.js"></script>
 </body>
 
 </html>

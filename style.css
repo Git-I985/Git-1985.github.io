@@ -76,6 +76,8 @@ body {
     font-size: 40px;
     width: 100%;
     text-align: right;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .input::-moz-selection {
@@ -113,4 +115,8 @@ body {
 
 .tool:hover {
     filter: brightness(1.1);
+}
+
+.red {
+    color: var(--orange-btn-color);
 }
