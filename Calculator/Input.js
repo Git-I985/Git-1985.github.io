@@ -1,6 +1,8 @@
-class CalculatorInput {
+class Input {
     constructor(node) {
         this.node = node;
+        this.node.focus();
+        this.node.onblur = this.focus.bind(this);
     }
 
     get value() {
@@ -12,7 +14,7 @@ class CalculatorInput {
     }
 
     append(char) {
-        this.node.append(char);
+        this.value += char;
     }
 
     slice() {
@@ -22,6 +24,10 @@ class CalculatorInput {
     clear() {
         this.value = null;
     }
+
+    focus() {
+        this.node.focus();
+    }
 }
 
-export default CalculatorInput;
+export default Input;

@@ -16,7 +16,7 @@
         <div class="toolbox">
             <i class="fas fa-clone tool" data-action="copy" title="Copy to clipboard"></i>
         </div>
-        <div class="input-field">
+        <div class="input-box">
             <div class="input" contenteditable="true"></div>
         </div>
         <div class="buttons-group">
@@ -27,7 +27,7 @@
             <div class="btn btn-small" data-action="cos(">cos</div>
             <div class="btn btn-small" data-action="^2">x²</div>
             <div class="btn btn-small" data-action="^">xⁿ</div>
-            <div class="btn btn-small"></div>
+            <div class="btn btn-small">%</div>
             <div class="btn btn-small" data-action="removeLast">CE</div>
             <!-- Main btns group -->
             <div class="btn btn-red" data-action="clearInput">C</div>
@@ -51,12 +51,13 @@
             <div class="btn btn-green" data-action="getResult">=</div>
         </div>
     </div>
-
+    <footer class="footer">
+    </footer>
     <script src="https://pagecdn.io/lib/mathjs/7.1.0/math.min.js" crossorigin="anonymous"></script>
-
-    <script type="module" src="./CalculatorInput.js"></script>
-    <script type="module" src="./CalculatorButton.js"></script>
-    <script type="module" src="./index.js"></script>
+    <script type="module" src="./Validator.js"></script>
+    <script type="module" src="./Input.js"></script>
+    <script type="module" src="./Button.js"></script>
+    <script type="module" src="./Calculator.js"></script>
 </body>
 
 </html>
